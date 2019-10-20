@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(spike_ros_interface_gateways)
+project(ros1-melodic-to-ros2-dashing-with-custom-messages)
 
 # Default to C++14
 if (NOT CMAKE_CXX_STANDARD)
