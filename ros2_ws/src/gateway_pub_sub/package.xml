@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="2">
+    <name>gateway_pub_sub</name>
+    <version>0.0.0</version>
+    <description>Example pub/sub implementation with gateway_interfaces</description>
+    <maintainer email="initialed85@gmail.com">edwardbeech</maintainer>
+    <license>Apache License 2.0</license>
+
+    <buildtool_depend>ament_cmake</buildtool_depend>
+    <buildtool_depend>ament_cmake_python</buildtool_depend>
+
+    <depend>rclcpp</depend>
+    <depend>rclcpy</depend>
+    <depend>builtin_interfaces</depend>
+    <depend>std_msgs</depend>
+    <depend>gateway_interfaces</depend>
+
+    <export>
+        <build_type>ament_cmake</build_type>
+    </export>
+</package>

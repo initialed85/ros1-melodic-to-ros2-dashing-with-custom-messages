@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+PREFIX=ros1_melodic_to_ros2_dashing_with_custom_messages
+PACKAGE=gateway_pub_sub
+DOCKERFILE=dockerfile/context_ros1_${PACKAGE}/Dockerfile
+IMAGE_NAME=${PREFIX}_ros1_${PACKAGE}
+CONTEXT=.
+
+docker build -t ${IMAGE_NAME} -f ${DOCKERFILE} ${CONTEXT}
+
+exit ${?}

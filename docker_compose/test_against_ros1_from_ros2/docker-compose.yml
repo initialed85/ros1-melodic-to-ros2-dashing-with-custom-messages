@@ -1,0 +1,19 @@
+version: '2.3'
+networks:
+  default:
+    driver: bridge
+services:
+  ros_under_test:
+    image: ros1_melodic_to_ros2_dashing_with_custom_messages_ros1_gateway_pub_sub
+    networks:
+      - default
+  ros1_bridge:
+    image: ros1_melodic_to_ros2_dashing_with_custom_messages_ros2_ros1_bridge
+    environment:
+      - ROS_MASTER_URI=http://ros_under_test:11311/
+    networks:
+      - default
+  ros_test_harness:
+    image: ros1_melodic_to_ros2_dashing_with_custom_messages_ros2_gateway_pub_sub
+    networks:
+      - default

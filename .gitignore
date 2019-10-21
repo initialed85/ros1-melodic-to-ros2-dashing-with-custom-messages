@@ -1,0 +1,6 @@
+*/src/build
+*/src/install
+*/src/log
+cmake-build-debug
+.idea
+test_results
